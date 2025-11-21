@@ -21,7 +21,7 @@ const Home = () => {
     formData.append("file", selectedFile);
     try {
       const responce = await axios.post(
-        "http://localhost:3000/convertFile",
+        "https://word-to-pdf-converter-zeta.vercel.app/",
         formData,
         {
           responseType: "blob",
@@ -112,3 +112,4 @@ const Home = () => {
 };
 
 export default Home;
+
